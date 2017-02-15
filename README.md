@@ -8,18 +8,18 @@ This is a react-native project for showing lunar calendar in phone, it is only s
 
 ### Getting Started
 
-* ```shell
+  ```shell
   $ git clone https://github.com/Txiaozhe/react-native-lunar-calendar.git
   ```
 
-* ```shell
+  ```shell
   $ cd lunarCalendar
   ```
 
-* ```shell
+  ```shell
   $ npm install
   ```
 
-* ```shell
+  ```shell
   $ react-native run-android
   ```
