@@ -1,5 +1,5 @@
 ### react-native-lunar-calendar
-This is a react-native project for showing lunar calendar in phone, it is only support android but if necessary, you can edit the code for ios supporting.
+This is a react-native project for showing lunar calendar in phone, it is only support android now but if necessary, you can edit the code for ios supporting.
 
 ### Information
 
