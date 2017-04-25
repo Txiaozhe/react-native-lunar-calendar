@@ -24,11 +24,8 @@
 
 "use strict";
 
-import React, { Component } from "react";
-import {
-  AppRegistry
-} from "react-native";
+const string = {
+  week: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
+};
 
-import Calender from "./Calender/calender";
-
-AppRegistry.registerComponent("lunarCalendar", () => Calender);
+export default string;

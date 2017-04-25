@@ -24,11 +24,10 @@
 
 "use strict";
 
-import React, { Component } from "react";
-import {
-  AppRegistry
-} from "react-native";
+import style from "./styles";
+import colors from "./colors";
+import string from "./zh-cn/string";
 
-import Calender from "./Calender/calender";
-
-AppRegistry.registerComponent("lunarCalendar", () => Calender);
+export const Style = style;
+export const Color = colors;
+export const String = string;

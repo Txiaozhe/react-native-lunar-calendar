@@ -24,11 +24,12 @@
 
 "use strict";
 
-import React, { Component } from "react";
-import {
-  AppRegistry
-} from "react-native";
+const colors = {
+  white: "#ffffff",
+  red: "#ff0000",
+  black: "#000000",
+  grey: "#f0f0f0",
+  green: "#6A9983"
+};
 
-import Calender from "./Calender/calender";
-
-AppRegistry.registerComponent("lunarCalendar", () => Calender);
+export default colors;

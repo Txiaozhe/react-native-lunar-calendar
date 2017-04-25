@@ -24,11 +24,46 @@
 
 "use strict";
 
-import React, { Component } from "react";
 import {
-  AppRegistry
+  Dimensions
 } from "react-native";
 
-import Calender from "./Calender/calender";
+const window = Dimensions.get("window");
+const width = window.width;
+const height = window.height;
 
-AppRegistry.registerComponent("lunarCalendar", () => Calender);
+function Width(w) {
+  return w / 720 * width;
+}
+
+function Height(h) {
+  return h / 1280 * height;
+}
+
+function WidthScale(scale) {
+  return width / scale;
+}
+
+function HeightScale(scale) {
+  return height / scale;
+}
+
+const style = {
+  WIDTH: width,
+  HEIGHT: height,
+  Width: Width,
+  Height: Height,
+  WidthScale: WidthScale,
+  HeightScale: HeightScale,
+
+  Center: {
+    justifyContent: "center",
+    alignItems: "center"
+  },
+
+  Row: {
+    flexDirection: "row"
+  }
+};
+
+export default style;
