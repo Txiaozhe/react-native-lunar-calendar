@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b05c855-1b06-4940-8392-0691547039c5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/calendar/calender.js" afterPath="$PROJECT_DIR$/calendar/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/calendar/calenderBody.js" afterPath="$PROJECT_DIR$/calendar/calendarBody.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/calendar/calenderHead.js" afterPath="$PROJECT_DIR$/calendar/calendarHead.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/calendar/calenderHeader.js" afterPath="$PROJECT_DIR$/calendar/calendarHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,9 +107,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="852" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -179,15 +177,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502788688755</updated>
-      <workItem from="1502788690501" duration="1764000" />
+      <workItem from="1502788690501" duration="2260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1764000" />
+    <option name="totallyTimeSpent" value="2260000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="830" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
