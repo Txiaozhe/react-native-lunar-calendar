@@ -1,25 +1,22 @@
 ### react-native-lunar-calendar
-This is a react-native project for showing lunar calendar in phone, it is only support android now but if necessary, you can edit the code for ios supporting.
+A lunar calendar component for react-native.
 
-### Information
-
-* react version: 15.3.1
-* react-native version: 0.33.0
+[GitHub](https://github.com/Txiaozhe/react-native-lunar-calendar.git)
 
 ### Getting Started
 
   ```shell
-  $ git clone https://github.com/Txiaozhe/react-native-lunar-calendar.git
+$ npm install react-native-lunar-calendar --save
   ```
 
-  ```shell
-  $ cd lunarCalendar
-  ```
+```jsx
+import Calender from "react-native-lunar-calendar";
 
-  ```shell
-  $ npm install
-  ```
-
-  ```shell
-  $ react-native run-android
-  ```
+...
+render() {
+  return (
+    <Calender />
+  )
+}
+...
+```

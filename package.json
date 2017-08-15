@@ -1,0 +1,25 @@
+{
+  "name": "react-native-lunar-calendar",
+  "version": "1.0.0",
+  "description": "A lunar calendar component for react-native.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Txiaozhe/react-native-lunar-calendar.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Txiaozhe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Txiaozhe/react-native-lunar-calendar/issues"
+  },
+  "homepage": "https://github.com/Txiaozhe/react-native-lunar-calendar#readme"
+}
