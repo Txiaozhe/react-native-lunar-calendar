@@ -20,3 +20,6 @@ render() {
 }
 ...
 ```
+![](https://github.com/Txiaozhe/react-native-lunar-calendar/blob/master/image/calendar.png)
+
+![](https://github.com/Txiaozhe/react-native-lunar-calendar/blob/master/image/calendar2.png)
