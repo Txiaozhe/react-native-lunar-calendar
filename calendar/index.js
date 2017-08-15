@@ -32,9 +32,9 @@ import {
   StyleSheet
 } from "react-native";
 
-import CalendarHeader from "./calenderHeader";
-import CalendarHead from "./calenderHead";
-import CalendarBody from "./calenderBody";
+import CalendarHeader from "./calendarHeader";
+import CalendarHead from "./calendarHead";
+import CalendarBody from "./calendarBody";
 
 import {Color} from "../res"
 
@@ -81,6 +81,7 @@ export default class Calendar extends Component {
 
 const styles = StyleSheet.create({
   react_calendar: {
+    marginTop: 20,
     backgroundColor: Color.white,
   },
 });
