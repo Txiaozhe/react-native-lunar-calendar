@@ -90,7 +90,9 @@ export default class CalendarBody extends Component {
     let curYear = curDate.getFullYear();
     let curMonth = curDate.getMonth() + 1;
     let curDay = curDate.getDate();
-
+    let cur = {
+      backgroundColor: "#6A9983"
+    };
     let table = this.getCalendarTable(year, month);
     let rows = table.map((row, rowId) => {
       let days = row.map((day, index) => {
@@ -103,9 +105,9 @@ export default class CalendarBody extends Component {
           this.onClickCallback(year, month, day);
           //this.props._onSelectedChange;
         });
-        let className = [styles.day, styles.center, styles.date];
-        if (isCur) className.push(styles.cur);
-        if (isWeekend) className.push(styles.weekend);
+        let className = [styles.day, styles.center, styles.date, this.props.dateStyle];
+        if (isCur) className.push(this.props.selectDateStyle ? this.props.selectDateStyle : cur);
+        if (isWeekend) className.push(this.props.weekendStyle ? this.props.weekendStyle : styles.weekend);
         if (day) {
           lunarDate = getLunarDate(new Date(year, month - 1, day));
           //lunarDate = getCNDate(new Date(year, month - 1, day));
@@ -123,7 +125,7 @@ export default class CalendarBody extends Component {
         return (
           <TouchableOpacity
             key={index}
-            style={className}
+            style={[className]}
             onPress={pressCb}>
             <Text>{day}</Text>
             {lunarDateView}
@@ -173,11 +175,7 @@ const styles = StyleSheet.create({
   },
 
   weekend: {
-    backgroundColor: "#f0f0f0"
-  },
-
-  cur: {
-    backgroundColor: "#6A9983"
+    backgroundColor: "#f00"
   },
 
   lunar: {

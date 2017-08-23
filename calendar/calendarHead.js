@@ -27,31 +27,34 @@
 import React, {Component} from "react";
 import {
   View,
-  Text,
-  StyleSheet
+  Text
 } from "react-native";
 
 import {String, Color, Style} from "../res";
 
 export default class CalendarHead extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    let nodes = String.week.map(function (text, index) {
+    let nodes = String.week.map((text, index) => {
       let className = [styles.day, (index === 0 || index === 6 ? styles.weekend : '')];
       return (
-        <View key={index} style={className}>
+        <View key={index} style={[className, this.props.style]}>
           <Text>{text}</Text>
         </View>
       );
     });
     return (
       <View>
-        <View style={Style.Row}>{nodes}</View>
+        <View style={[Style.Row, this.props.style]}>{nodes}</View>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   day: {
     flex: 1,
     height: 30,
@@ -64,4 +67,4 @@ const styles = StyleSheet.create({
   weekend: {
     backgroundColor: Color.grey
   }
-});
+};

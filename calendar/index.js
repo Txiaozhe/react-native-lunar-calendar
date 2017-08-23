@@ -52,28 +52,33 @@ export default class Calendar extends Component {
     this.setState({
       date: date
     });
+    this.props.onMonthSelect(date)
   };
 
   onSelectedChange = (date) => {
     this.setState({
       current: date
     });
+    this.props.onDateSelect(date);
   };
 
   render() {
-    var date = this.state.date;
-    var current = this.state.current;
+    let date = this.state.date;
+    let current = this.state.current;
     return (
-      <View style={[styles.react_calendar]}>
-        <CalendarHeader date={date} onNavChange={this.onNavChange}></CalendarHeader>
-        <View>
-          <CalendarHead />
-          <CalendarBody
-            current={current}
-            date={date}
-            onSelectedChange={this.onSelectedChange}
-          />
-        </View>
+      <View style={[styles.react_calendar, this.props.style]}>
+        <CalendarHeader
+          style={this.props.headerStyle}
+          date={date}
+          onNavChange={this.onNavChange}/>
+        <CalendarHead style={this.props.weekHeadStyle}/>
+        <CalendarBody
+          dateStyle={this.props.dateStyle}
+          selectDateStyle={this.props.selectDateStyle}
+          weekendStyle={this.props.weekendStyle}
+          current={current}
+          date={date}
+          onSelectedChange={this.onSelectedChange}/>
       </View>
     );
   }

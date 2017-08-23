@@ -68,7 +68,7 @@ export default class CalendarHeader extends Component {
     this.setState({
       lYear: getLunarDate(new Date(_year, _month)).year,
       lAniYear: getLunarDate(new Date(_year, _month)).zodiac,
-    })
+    });
   };
 
   onClickRight = () => {
@@ -94,7 +94,7 @@ export default class CalendarHeader extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, this.props.style]}>
         <TouchableOpacity onPress={this.onClickLeft} style={Style.Center}>
           <Text style={{fontSize: 30, marginLeft: 10}}>{"<"}</Text>
         </TouchableOpacity>
